@@ -1,0 +1,48 @@
+version: "3"
+services:
+  backend:
+    #dockerfile이 있는 위치
+    build: ./gackjibun_be
+    #연결할 외부 디렉토리:컨테이너 내 디렉토리
+    volumes:
+      - ./gackjibun_be:/usr/src/app
+    ports:
+      - "8080:8080"
+    #환경변수 설정
+    environment:
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - DATABASE_URL=postgres://postgres:postgres@postgres:5432/iceboxdb
+
+      - OPENAI_API_KEY=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
+      - OPENAI_ORGANIZATION_KEY=org-b8ffgkk9IU1mkeHe9NS7ccFh
+      - OPENAI_PROJECT_KEY=proj_4EoZJcgwYChUExn71uBP8CoM
+    depends_on:
+      - postgres
+
+  postgres:
+    #dockerfile이 있는 위치
+    build: ./gaekjibun_db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=iceboxdb
+    #내부에서 개방할 포트:외부에서 개방할 포트
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./gaekjibun_db/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  frontend:
+    build: ./gaekjibun_ft
+    volumes:
+      - ./gaekjibun_ft:/usr/src/app
+    ports:
+      - "3000:3000"
+    #환경변수 설정
+    environment:
+      - REACT_APP_BACKEND_URL=http://localhost:8080
+    depends_on:
+      - backend

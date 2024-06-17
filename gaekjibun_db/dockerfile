@@ -1,0 +1,14 @@
+FROM postgres:latest
+
+# 환경 변수 설정 (예: 비밀번호, 타임존)
+ENV POSTGRES_PASSWORD=postgres
+ENV TZ=Asia/Seoul
+
+# 포트 5432를 외부에 노출 (옵션)
+EXPOSE 5432
+
+# 초기 SQL 스크립트 복사
+COPY init.sql /docker-entrypoint-initdb.d/
+
+# 컨테이너 시작 시 실행할 명령어 (옵션)
+CMD ["postgres"]
