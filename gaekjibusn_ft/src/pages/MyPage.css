@@ -1,0 +1,170 @@
+.my-page-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 180px;
+}
+
+.left-section {
+  flex: 1;
+  padding: 50px 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section {
+  flex: 10;
+  padding: 50px 10px;
+}
+
+.user-photo img {
+  width: 250px;
+  height: 404px;
+  border-radius: 5%;
+  object-fit: cover;
+  background-color: bisque;
+}
+
+.change-photo-btn {
+  margin-top: 10px;
+  padding: 10px 25px;
+  width: 250px;
+  text-align: center;
+  background-color: rgb(52, 50, 88);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.change-photo-btn:active {
+  background-color: #108639;
+}
+
+.file-input {
+  display: none;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item {
+  margin-bottom: 10px;
+}
+
+.info-item label {
+  font-weight: bold;
+}
+
+.notification-settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+/* Toggle switch container */
+.toggleSwitch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide the default checkbox */
+.toggleSwitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.toggleButton {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+/* The circle inside the slider */
+.toggleButton:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* Checked state styles */
+input:checked + .toggleSwitch .toggleButton {
+  background-color: #2196F3;
+}
+
+input:checked + .toggleSwitch .toggleButton:before {
+  transform: translateX(26px);
+}
+
+/* Date select styles */
+.date-select-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.date-select-label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.date-select-box {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.date-select-box.disabled {
+  background-color: #f0f0f0;
+  color: #a0a0a0;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.cancel-button {
+  padding: 5px 10px;
+  background-color: #ccc;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #999;
+}
+
+.save-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}

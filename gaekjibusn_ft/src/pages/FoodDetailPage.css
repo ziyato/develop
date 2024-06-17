@@ -1,0 +1,190 @@
+.foodDetailPage {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.undoSection {
+  margin-top: 20px;
+  padding: 20px 0 10px 0;
+}
+
+.undoButton {
+    background-image: url('../assets/undo.png');
+    background-size: contain;
+    background-position: center;
+    border: none;
+    padding: 30px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+  }
+  
+.foodDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 20px 0;
+  }
+
+.detailImage {
+  width: 600px;
+  height: 600px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.detailImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detailImage span {
+  font-size: 30px;
+}
+
+.detailText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px 0px 20px 50px;
+  border: 2px dotted #dadada;
+  border-radius: 5px;
+  position: relative;
+}
+
+.detailText .detailRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.detailText .detailInfo {
+  min-width: 140px;
+}
+
+.detailText span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.detailText input {
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.detailText .detailTitle {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.editableInput {
+  width: 50%;
+}
+
+.expirationDateWrapper {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  flex-wrap: nowrap;
+}
+
+.remainingTime {
+  margin-left: 20px;
+}
+
+.saveSection {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+.saveButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.memoSection {
+  width: 70%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.memoSection span {
+  font-size: 20px;
+  display: block;
+  margin-top: 20px;
+}
+
+.memoTextWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.memoText {
+  width: 100%;
+  height: 200px;
+  max-height: 200px;
+  border: 2px solid #e7cc54;
+  background-color: #ffea8f;
+  padding: 20px;
+  margin-top: 20px;
+  outline: none;
+  font-size: 20px;
+  line-height: 1.3;
+  resize: none;
+  overflow: hidden;
+}
+
+.memoSave {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.memoSaveButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.tipSection {
+  width: 70%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.tipSection span {
+  font-size: 20px;
+  display: block;
+  margin-top: 40px;
+}
+
+.chatGPTSection {
+  width: 100%;
+  height: 600px;
+  background-color: rgb(255, 191, 191);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}

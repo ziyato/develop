@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2f6cc99f.css",
+    "main.js": "/static/js/main.73733e47.js",
+    "static/js/453.d66aa983.chunk.js": "/static/js/453.d66aa983.chunk.js",
+    "static/media/Func2NameExample.png": "/static/media/Func2NameExample.01f6da1ddceebdf2633e.png",
+    "static/media/noImage.jpeg": "/static/media/noImage.ec748c49ecc363a00f63.jpeg",
+    "static/media/search.png": "/static/media/search.e21534c50161a2f513a7.png",
+    "index.html": "/index.html",
+    "main.2f6cc99f.css.map": "/static/css/main.2f6cc99f.css.map",
+    "main.73733e47.js.map": "/static/js/main.73733e47.js.map",
+    "453.d66aa983.chunk.js.map": "/static/js/453.d66aa983.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f6cc99f.css",
+    "static/js/main.73733e47.js"
+  ]
+}

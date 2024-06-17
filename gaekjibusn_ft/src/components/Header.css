@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    margin-top: 15px;
+}
+.notification-container {
+    position: absolute;
+    right: 0;
+    margin-top: 0.5rem; /* 종 아이콘과의 간격 */
+    width: 12rem; /* 알림 목록의 너비 */
+    background-color: #ffffff; /* 배경색 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    border-radius: 0.375rem; /* 테두리 반경 */
+    z-index: 50; /* z-index 설정 */
+  }
+  
+  /* 알림 목록 항목 */
+  .notification-item {
+    padding: 0.5rem 1rem; /* 내부 여백 */
+    color: #000000; /* 텍스트 색상 */
+    cursor: pointer; /* 커서 모양 */
+  }
+  
+  .notification-item:hover {
+    background-color: #f3f4f6; /* 항목 호버 효과 */
+  }
+  
+  /* Tailwind CSS classes 적용 */
+  .notification-item {
+    @apply px-4 py-2 text-black hover:bg-gray-200;
+  }
+  
+  .notification-container {
+    @apply absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md z-50;
+  }

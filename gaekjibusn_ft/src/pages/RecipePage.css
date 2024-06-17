@@ -1,0 +1,53 @@
+.RecipePage {
+  text-align: center;
+  padding: 20px;
+}
+
+.RecipeHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(223, 223, 223);
+}
+
+
+
+.RecipeHeader h2 {
+  font-size: 1.5em; /* 글씨 크기를 크게 설정합니다 */
+  font-weight: bold; /* 글씨를 굵게 설정합니다 */
+}
+
+.RecipeBox {
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius: 8px;
+  min-height: 200px; /* 박스의 최소 높이를 설정합니다 */
+}
+/* RecipePage.css */
+
+.copyButton {
+  background-color: #4caf50; /* 버튼 배경색 */
+  color: white; /* 버튼 텍스트 색상 */
+  padding: 10px 20px; /* 버튼 내부 여백 */
+  font-size: 16px; /* 버튼 텍스트 크기 */
+  border: none; /* 버튼 테두리 없애기 */
+  border-radius: 5px; /* 버튼 모서리 둥글게 만들기 */
+  cursor: pointer; /* 커서 모양 변경 */
+  transition: background-color 0.3s; /* 배경색 변경 시 부드러운 애니메이션 */
+}
+
+.copyButton:hover {
+  background-color: #45a049; /* 호버 시 배경색 변경 */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
